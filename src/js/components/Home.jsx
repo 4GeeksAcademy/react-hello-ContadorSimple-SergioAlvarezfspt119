@@ -4,25 +4,53 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-const Home = () => {
-	return (
-		<div className="text-center">
-            
+const Home = ({
+  unidad,
+  decena,
+  centena,
+  miles,
+  diezMiles,
+  cienMiles,
+  millones,
+}) => {
+  return (
+	<>
+	
+	
+    <div className="d-flex flex-row-reverse justify-content-center gap-2 background">
+      <div className="col-1 btn btn-secondary">
+        <p>{unidad}</p>
+      </div>
 
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
+      <div className="col-1 btn btn-secondary">
+        <p>{decena}</p>
+      </div>
+
+      <div className="col-1 btn btn-secondary">
+        <p>{centena}</p>
+      </div>
+      <div className="col-1 btn btn-secondary">
+        <p>{miles}</p>
+      </div>
+
+      <div className="col-1 btn btn-secondary">
+        <p>{diezMiles}</p>
+      </div>
+      <div className="col-1 btn btn-secondary">
+        <p>{cienMiles}</p>
+      </div>
+      <div className="col-1 btn btn-secondary ">
+        <p>{millones}</p>
+      </div>
+
+      <div className="col-1 btn btn-secondary">
+        <p className="p-0 m-0">
+          <i className="fa-solid fa-clock reloj"></i>
+        </p>
+      </div>
+    </div>
+	  </>
+  ); 
 };
 
 export default Home;

@@ -9,3 +9,9 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.background {
+    background-color: rgba(0, 0, 0, 0.772);
+    padding: 10px;
+}
+
